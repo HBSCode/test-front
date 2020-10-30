@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 
-import './App.scss'
+import '../src/styles/App.scss'
 import Bag from './components/Bag'
 import Payment from './components/Payment'
 import Confirm from './components/Confirm'
