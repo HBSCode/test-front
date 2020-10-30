@@ -4,11 +4,11 @@ import Button from './Button'
 
 const Bag = (props) => {
   return (
-    <div>
+    <div className="bag">
       <Button
         label="seguir para o pagamento"
         onClick={() => {
-          props.history.push('/pagamento')
+          props.history.push('/payment')
         }}
       />
     </div>

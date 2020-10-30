@@ -9,8 +9,8 @@
   align-items: center;
   justify-content: center;
   background-color: $orange;
-  transition: backColorTransition;
-  box-shadow: inset 0 -3px 0 0 $darkOrange, 0 2px 4px 0 rgba(0,0,0,0.25);
+  transition: $backColorTransition;
+  box-shadow: inset 0 -3px 0 0 $darkOrange, 0 2px 4px 0 gray-2;
 
   &:hover {
     background-color: $darkOrange;
@@ -22,7 +22,7 @@
     background-color: $lightGray;
 
     &:hover {
-      background-color:$gray;
+      background-color: $gray-2;
     }
   }
 

@@ -1,9 +1,29 @@
-//Colors
+// Fonts
+$primaryFonts: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$secondaryFonts: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+monospace;
+
+//Basic Colors
+$red: #F30F30;
+$ice: #E7E7E7;
 $white: #FFFFFF;
 $orange: #FF6C00;
+$purple:  #A43287;
+$gray-1: #00000033;
+$gray-2: #00000040;
+$gray-3: #00001d38;
+$lightGray: #CCCCCC;
+
+//Extra Colors
+$mainBlack: #282C34;
 $darkOrange: #D45A00;
-$gray: rgb(129, 113, 94);
-$lightGray:  rgb(156, 148, 138);
+$backgroundGray: #EEEEEE;
+
+//Components Colors
+$fieldTextColor: #212121;
+$fieldPlaceholderColor: #E0E7EE;
 
 //Transitions
+$opacityTransition: 0.66s opacity linear;
+$borderColorTransition: 0.33s border-color ease-in-out;
 $backColorTransition: 0.33s background-color ease-in-out;
