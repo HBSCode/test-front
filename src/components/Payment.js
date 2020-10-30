@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import '../styles/Payment.scss'
 import Input from './Input'
+import Header from './Header'
 import Button from './Button'
 
 const Payment = (props) => {
@@ -12,6 +13,10 @@ const Payment = (props) => {
 
   return (
     <div className="payment">
+      <Header />
+
+      <h1 className="page-title">cartão de crédito</h1>
+
       <div className="input-box">
         <Input
           id="card-number"
@@ -19,6 +24,7 @@ const Payment = (props) => {
           maxLength={16}
           placeholder="____.____.____.____"
           invalidMsg="Número do cartão inválido."
+          style={{ marginTop: '10px' }}
           onValueChange={(value) => {
             setCardNumber(value)
             console.log(cardNumber)
@@ -66,7 +72,6 @@ const Payment = (props) => {
         </div>
       </div>
 
-      <br />
       <br />
 
       <Button

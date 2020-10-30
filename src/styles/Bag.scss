@@ -1,0 +1,12 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.bag {
+  @include background-gray;
+  @include background-gray-mobile;
+
+  .page-title {
+    @include page-title;
+    margin: 10px 20px;
+  }
+}

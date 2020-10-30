@@ -3,7 +3,12 @@
 
 .payment {
   @include background-gray;
- @include background-gray-mobile;
+  @include background-gray-mobile;
+
+  .page-title {
+    @include page-title;
+    margin: 10px 20px;
+  }
 
   .input-box {
     @include white-box;
