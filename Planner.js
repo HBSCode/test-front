@@ -1,10 +1,10 @@
 const App = {
-	step: "CART" || "PAYMENT" || "CONFIRM",
+	step: "BAG" || "PAYMENT" || "CONFIRM",
 	data: {
-		cart: {
+		Bag: {
       shipping: 0,
       discount: 0,
-      cartTotalAmount: 0,
+      BagTotalAmount: 0,
       productsTotalAmount:0,
       products: [{
         title: "",

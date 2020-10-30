@@ -1,11 +1,19 @@
 import React from 'react'
-import logo from './logo.svg'
+import { BrowserRouter, Route } from 'react-router-dom'
+
 import './App.scss'
+import Bag from './components/Bag'
+import Payment from './components/Payment'
+import Confirm from './components/Confirm'
 
 const App = () => (
-  <div className="App">
-      <img src={logo} className="App-logo" alt="logo" />
-  </div>
+  <BrowserRouter>
+    <div className="App">
+      <Route exact path="/" component={Bag}></Route>
+      <Route path="/pagamento" component={Payment}></Route>
+      <Route path="/confirmacao" component={Confirm}></Route>
+    </div>
+  </BrowserRouter>
 )
 
 export default App
