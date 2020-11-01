@@ -10,7 +10,7 @@
     margin: 10px 20px;
   }
 
-  .input-box {
+  .white-box {
     @include white-box;
     min-height: 279px; //I have changed it to min-height, because the invalid text height above the input will overflow the box.
 

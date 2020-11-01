@@ -1,0 +1,21 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.product-item {
+  height: 90px;
+  width: 316px;
+  display: flex;
+  margin: 6px 12px;
+
+  &:first-of-type {
+    margin-top: 12px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 12px;
+  }
+
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid $defaultGray;
+}

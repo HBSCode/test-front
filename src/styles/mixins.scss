@@ -9,14 +9,21 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: $backgroundGray;
+  background-color: $defaultGray;
 }
 
 @mixin white-box {
   width: 340px;
-    border-radius: 3px;
-    background-color: $white;
-    box-shadow: 1px 1px 5px 0 $gray-3;
+  border-radius: 3px;
+  background-color: $white;
+  box-shadow: 1px 1px 5px 0 $gray-3;
+}
+
+@mixin product-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @mixin page-title {

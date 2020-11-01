@@ -17,7 +17,7 @@ const Payment = (props) => {
 
       <h1 className="page-title">cartão de crédito</h1>
 
-      <div className="input-box">
+      <div className="white-box">
         <Input
           id="card-number"
           label="Número do Cartão:"
