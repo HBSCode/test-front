@@ -1,0 +1,23 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.payment {
+  @include background-gray;
+  @include background-gray-mobile;
+
+  .page-title {
+    @include page-title;
+    margin: 10px 20px;
+  }
+
+  .white-box {
+    @include white-box;
+    min-height: 279px; //I have changed it to min-height, because the invalid text height above the input will overflow the box.
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import "./variables.scss";
+
+@mixin background-gray-mobile {
+  width: 360px;
+  min-height: 740px;
+}
+
+@mixin background-gray {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $defaultGray;
+}
+
+@mixin white-box {
+  width: 340px;
+  border-radius: 3px;
+  background-color: $white;
+  box-shadow: 1px 1px 5px 0 $gray-3;
+}
+
+@mixin product-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin page-title {
+  height: 17px;
+  color: $gray-4;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  align-self: baseline;
+  text-transform: uppercase;
+  font-family: $primaryFonts;
+}

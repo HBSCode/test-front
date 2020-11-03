@@ -10,3 +10,7 @@
 ### 1º Step
 
 After the fork of project, I have updated the react version, added the new dependencies and setup routes plus the basic components structure.
+
+### 2º Step
+
+Created the small components that are part of screens. Paying attention to pixel perfect and reusable proposal.
