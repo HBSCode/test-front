@@ -2,7 +2,7 @@
 
 @mixin background-gray-mobile {
   width: 360px;
-  height: 740px;
+  min-height: 740px;
 }
 
 @mixin background-gray {

@@ -2,10 +2,12 @@
 @import "./mixins.scss";
 
 .product-item {
-  height: 90px;
   width: 316px;
   display: flex;
   margin: 6px 12px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  border: 1px solid $defaultGray;
 
   &:first-of-type {
     margin-top: 12px;
@@ -15,7 +17,60 @@
     margin-bottom: 12px;
   }
 
-  box-sizing: border-box;
-  border-radius: 3px;
-  border: 1px solid $defaultGray;
+  &.small {
+    min-height: 64px;
+  }
+
+  &.regular {
+    min-height: 90px;
+  }
+
+  .image {
+    &.small {
+      width: 42px;
+      height: 42px;
+      margin: 11px;
+    }
+
+    &.regular {
+      width: 65px;
+      height: 65px;
+      margin: 11px 11px 14px 10px;
+    }
+  }
+
+  .item-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .name {
+      width: 100%;
+      font-size: 13px;
+      line-height: 16px;
+      align-self: flex-start;
+      margin: 12px 10px 15px 0;
+      color: $productItemTextColor;
+    }
+
+    .price {
+      width: 100%;
+      height: 17px;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: right;
+      align-self: flex-end;
+      margin: 0 10px 14px 0;
+      color: $productItemTextColor;
+
+      &.small {
+        display: none;
+      }
+  
+      &.regular {
+        display: block;
+      }
+    }
+  }
 }

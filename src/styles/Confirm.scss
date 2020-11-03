@@ -7,6 +7,11 @@
 
   .page-title {
     @include page-title;
-    margin: 10px 20px;
+    margin: 10px 20px 5px 20px;
+  }
+
+  .white-box {
+    @include white-box;
+    @include product-box;
   }
 }

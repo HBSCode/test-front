@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 
 import '../styles/Bag.scss'
+import logo from '../images/logo.svg'
+
 import Header from './Header'
 import Button from './Button'
 import mocky from '../apis/mocky'
@@ -30,6 +32,7 @@ const Bag = (props) => {
       return (
         <ProductItem
           key={item.product.sku}
+          isASmallVersion={false}
           name={item.product.name}
           image={item.product.imageObjects[0].small}
           price={item.product.priceSpecification.price}
@@ -39,7 +42,11 @@ const Bag = (props) => {
   }
 
   if (isLoading) {
-    return <div>IS LOADING...</div>
+    return (
+      <div className="App">
+        <img src={logo} className="App-logo" alt="logo" />
+      </div>
+    )
   }
 
   return (
