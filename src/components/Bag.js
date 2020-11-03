@@ -57,6 +57,8 @@ const Bag = (props) => {
 
       <div className="white-box">{ProductItems.length > 0 ? ProductItems : 'No Data'}</div>
 
+      <br />
+
       <Button
         label="seguir para o pagamento"
         onClick={() => {

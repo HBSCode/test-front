@@ -30,8 +30,6 @@ const Confirm = (props) => {
     <div className="confirm">
       <Header />
 
-      <h1 className="page-title">pagamento</h1>
-
       <h1 className="page-title">produtos</h1>
 
       <div className="white-box">{ProductItems.length > 0 ? ProductItems : 'No Data'}</div>
